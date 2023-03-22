@@ -6,19 +6,12 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
-  document.querySelector('.login-form-container').classList.toggle('active');
-}
-
-document.querySelector('#close-login-form').onclick = () =>{
-  document.querySelector('.login-form-container').classList.remove('active');
-}
 
 window.onscroll = () =>{
 
   menu.classList.remove('fa-times');
   navbar.classList.remove('active');
-
+  
   if(window.scrollY > 0){
     document.querySelector('.header').classList.add('active');
   }else{
@@ -59,7 +52,7 @@ var swiper = new Swiper(".vehicles-slider", {
   spaceBetween: 20,
   loop:true,
   autoplay: {
-    delay: 9500,
+    delay: 5500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -85,7 +78,7 @@ var swiper = new Swiper(".featured-slider", {
   spaceBetween: 20,
   loop:true,
   autoplay: {
-    delay: 9500,
+    delay: 6500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -111,7 +104,7 @@ var swiper = new Swiper(".review-slider", {
   spaceBetween: 20,
   loop:true,
   autoplay: {
-    delay: 9500,
+    delay: 6500,
     disableOnInteraction: false,
   },
   pagination: {
